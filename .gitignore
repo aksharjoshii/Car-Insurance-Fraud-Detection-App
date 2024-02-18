@@ -1,3 +1,4 @@
 data_dir/
 __pycache__/
 .idea/
+artifacts/
