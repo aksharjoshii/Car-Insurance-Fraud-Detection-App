@@ -3,6 +3,7 @@ import torch.nn as nn
 from tqdm.auto import tqdm
 import wandb
 import json
+import os
 from data_loading.data_loaders import get_dataloaders
 from model_training.engine import training_model, validation_model
 from model_training.create_model import get_model_optimizer
@@ -77,7 +78,7 @@ def model_pipeline( hyperparams:dict,proj_config:dict, data_dir=data_dir, device
 
         # Save the best model after training loop
         if best_model_state_dict is not None:
-            torch.save(best_model_state_dict, 'artifacts/best_model.pth')
+            torch.save(best_model_state_dict, os.path.join('artifacts', config.best_weights))
             print("Saved best model with F1-macro:", best_val_f1)    
         
         # Create and log a W&B artifact for the model
