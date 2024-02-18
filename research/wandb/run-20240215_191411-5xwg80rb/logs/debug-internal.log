@@ -1,0 +1,151 @@
+2024-02-15 19:14:11,489 INFO    StreamThr :128711 [internal.py:wandb_internal():86] W&B internal server running at pid: 128711, started at: 2024-02-15 19:14:11.489218
+2024-02-15 19:14:11,490 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status
+2024-02-15 19:14:11,496 INFO    WriterThread:128711 [datastore.py:open_for_write():87] open: /home/akshar/Projects/Fraud_Classification/research/wandb/run-20240215_191411-5xwg80rb/run-5xwg80rb.wandb
+2024-02-15 19:14:11,496 DEBUG   SenderThread:128711 [sender.py:send():382] send: header
+2024-02-15 19:14:11,497 DEBUG   SenderThread:128711 [sender.py:send():382] send: run
+2024-02-15 19:14:12,479 ERROR   SenderThread:128711 [internal_api.py:execute():373] 403 response executing GraphQL.
+2024-02-15 19:14:12,479 ERROR   SenderThread:128711 [internal_api.py:execute():374] {"errors":[{"message":"permission denied","path":["upsertBucket"],"extensions":{"code":"PERMISSION_ERROR"}}],"data":{"upsertBucket":null}}
+2024-02-15 19:14:12,480 ERROR   SenderThread:128711 [sender.py:send_run():987] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+Traceback (most recent call last):
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 985, in send_run
+    self._init_run(run, config_value_dict)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 1027, in _init_run
+    server_run, inserted, server_messages = self._api.upsert_run(
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 2216, in upsert_run
+    response = self.gql(
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/util.py", line 965, in check_retry_fn
+    return fallback_retry_fn(e)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2024-02-15 19:14:15,240 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:16,502 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:14:17,481 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:20,241 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:21,504 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:14:22,482 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:25,242 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:26,507 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:14:27,483 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:30,243 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:31,510 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:14:32,484 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:35,244 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:36,512 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:14:37,485 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:40,245 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:41,517 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:14:42,486 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:45,247 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:46,520 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:14:47,486 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:50,249 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:51,523 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:14:52,488 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:55,250 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:14:56,526 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:14:57,489 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:00,250 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:01,529 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:15:02,491 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:05,251 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:06,531 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:15:07,492 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:10,252 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:11,535 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:15:12,493 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:15,253 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:16,537 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:15:17,493 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:20,254 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:21,542 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:15:22,494 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:25,255 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:26,544 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:15:27,494 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:30,256 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:31,548 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:15:32,495 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:35,258 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:36,552 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-15 19:15:37,496 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:40,259 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:41,556 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: cancel
+2024-02-15 19:15:41,556 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: cancel
+2024-02-15 19:15:42,497 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:45,261 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:47,499 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:50,263 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:52,502 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:55,265 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:15:57,504 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:00,267 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:02,507 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:05,270 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:07,509 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:10,272 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:12,511 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:15,274 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:17,514 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:20,276 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:22,516 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:25,278 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:27,518 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:30,279 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:32,520 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:35,281 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:37,521 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:40,282 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:42,522 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:45,283 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:47,523 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:50,284 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:52,524 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:55,285 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:16:57,525 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:00,285 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:02,525 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:05,287 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:07,527 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:10,289 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:12,528 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:15,291 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:17,530 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:20,292 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:22,530 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:25,293 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:27,532 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:30,295 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:32,534 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:35,296 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:37,535 DEBUG   HandlerThread:128711 [handler.py:handle_request():146] handle_request: status_report
+2024-02-15 19:17:38,557 WARNING StreamThr :128711 [internal.py:is_dead():414] Internal process exiting, parent pid 109281 disappeared
+2024-02-15 19:17:38,558 ERROR   StreamThr :128711 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-02-15 19:17:39,297 INFO    SenderThread:128711 [sender.py:finish():1572] shutting down sender
+2024-02-15 19:17:39,298 INFO    HandlerThread:128711 [handler.py:finish():869] shutting down handler
+2024-02-15 19:17:39,298 INFO    WriterThread:128711 [datastore.py:close():296] close: /home/akshar/Projects/Fraud_Classification/research/wandb/run-20240215_191249-36foi0uh/run-36foi0uh.wandb

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/tmp/ipykernel_399010/1227098573.py", line 13, in model_pipeline
+    model, optimizer = get_dataloaders(device=device)
+TypeError: get_dataloaders() got an unexpected keyword argument 'device'

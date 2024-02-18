@@ -1,0 +1,1 @@
+{"train/loss": 0.28109177729428403, "train/precsion": 0.8878446115288221, "train/recall": 0.8755020080321285, "train/f1-macro": 0.8822495650085627, "_timestamp": 1708081850.9428093, "_runtime": 52.339638233184814, "_step": 0, "_wandb": {"runtime": 50}}

@@ -1,0 +1,1 @@
+{"columns": ["Actual", "Predicted", "nPredictions"], "data": [["non-fraudulent", "non-fraudulent", 1502.0], ["non-fraudulent", "fraudulent", 21.0], ["fraudulent", "non-fraudulent", 68.0], ["fraudulent", "fraudulent", 25.0]]}

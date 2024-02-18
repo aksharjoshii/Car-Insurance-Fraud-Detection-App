@@ -1,0 +1,121 @@
+{
+    "os": "Linux-6.5.0-17-generic-x86_64-with-glibc2.35",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-02-15T14:03:29.092399",
+    "startedAt": "2024-02-15T14:03:22.889152",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "host": "ideapad",
+    "username": "akshar",
+    "executable": "/home/akshar/miniconda3/envs/pytorch/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2.658625,
+        "min": 400.0,
+        "max": 4463.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2.986,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.457,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.864,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.855,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.561,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.796,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.678,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.907,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.618,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.466,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.465,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.438,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.942,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.993,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.315,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.981,
+            "min": 400.0,
+            "max": 4463.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 112.08584594726562,
+            "used": 18.992965698242188
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 27.25084686279297
+    }
+}

@@ -1,0 +1,1 @@
+{"Loss": 0.0006580934813707181, "Accuracy": 1.0, "Precision": 0.0, "Recall": 0.0, "F1-Score": 1.0, "Confusion Matrix": 16, "_timestamp": 1708008657.0607939, "_runtime": 458.42259788513184, "_step": 19, "_wandb": {"runtime": 454}}

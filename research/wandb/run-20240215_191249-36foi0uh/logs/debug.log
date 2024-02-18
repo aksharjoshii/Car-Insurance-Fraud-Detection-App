@@ -1,0 +1,59 @@
+2024-02-15 19:12:49,232 INFO    MainThread:109281 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-02-15 19:12:49,233 INFO    MainThread:109281 [wandb_setup.py:_flush():76] Configure stats pid to 109281
+2024-02-15 19:12:49,233 INFO    MainThread:109281 [wandb_setup.py:_flush():76] Loading settings from /home/akshar/.config/wandb/settings
+2024-02-15 19:12:49,233 INFO    MainThread:109281 [wandb_setup.py:_flush():76] Loading settings from /home/akshar/Projects/Fraud_Classification/research/wandb/settings
+2024-02-15 19:12:49,233 INFO    MainThread:109281 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-02-15 19:12:49,233 INFO    MainThread:109281 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-02-15 19:12:49,233 INFO    MainThread:109281 [wandb_init.py:_log_setup():526] Logging user logs to /home/akshar/Projects/Fraud_Classification/research/wandb/run-20240215_191249-36foi0uh/logs/debug.log
+2024-02-15 19:12:49,233 INFO    MainThread:109281 [wandb_init.py:_log_setup():527] Logging internal logs to /home/akshar/Projects/Fraud_Classification/research/wandb/run-20240215_191249-36foi0uh/logs/debug-internal.log
+2024-02-15 19:12:49,233 INFO    MainThread:109281 [wandb_init.py:_jupyter_setup():472] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f6fb73a1db0>
+2024-02-15 19:12:49,233 INFO    MainThread:109281 [wandb_init.py:init():566] calling init triggers
+2024-02-15 19:12:49,233 INFO    MainThread:109281 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'epochs': 10, 'classes': 2, 'batch_size': 16, 'lr': 0.001, 'architecture': 'EfficientNet_B0', 'num_workers': 16}
+2024-02-15 19:12:49,233 INFO    MainThread:109281 [wandb_init.py:init():616] starting backend
+2024-02-15 19:12:49,233 INFO    MainThread:109281 [wandb_init.py:init():620] setting up manager
+2024-02-15 19:12:49,235 INFO    MainThread:109281 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-02-15 19:12:49,236 INFO    MainThread:109281 [wandb_init.py:init():628] backend started and connected
+2024-02-15 19:12:49,243 INFO    MainThread:109281 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-02-15 19:12:49,243 INFO    MainThread:109281 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-02-15 19:12:49,243 INFO    MainThread:109281 [wandb_init.py:init():720] updated telemetry
+2024-02-15 19:12:49,245 INFO    MainThread:109281 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-15 19:12:50,220 ERROR   MainThread:109281 [wandb_init.py:init():779] encountered error: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2024-02-15 19:12:50,608 ERROR   MainThread:109281 [wandb_init.py:init():1194] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+Traceback (most recent call last):
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2024-02-15 19:14:11,484 INFO    MainThread:109281 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-02-15 19:14:11,485 INFO    MainThread:109281 [wandb_setup.py:_flush():76] Configure stats pid to 109281
+2024-02-15 19:14:11,485 INFO    MainThread:109281 [wandb_setup.py:_flush():76] Loading settings from /home/akshar/.config/wandb/settings
+2024-02-15 19:14:11,485 INFO    MainThread:109281 [wandb_setup.py:_flush():76] Loading settings from /home/akshar/Projects/Fraud_Classification/research/wandb/settings
+2024-02-15 19:14:11,485 INFO    MainThread:109281 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-02-15 19:14:11,485 INFO    MainThread:109281 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-02-15 19:14:11,485 INFO    MainThread:109281 [wandb_init.py:_log_setup():526] Logging user logs to /home/akshar/Projects/Fraud_Classification/research/wandb/run-20240215_191411-5xwg80rb/logs/debug.log
+2024-02-15 19:14:11,485 INFO    MainThread:109281 [wandb_init.py:_log_setup():527] Logging internal logs to /home/akshar/Projects/Fraud_Classification/research/wandb/run-20240215_191411-5xwg80rb/logs/debug-internal.log
+2024-02-15 19:14:11,485 INFO    MainThread:109281 [wandb_init.py:init():566] calling init triggers
+2024-02-15 19:14:11,485 INFO    MainThread:109281 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'epochs': 10, 'classes': 2, 'batch_size': 16, 'lr': 0.001, 'architecture': 'EfficientNet_B0', 'num_workers': 16}
+2024-02-15 19:14:11,485 INFO    MainThread:109281 [wandb_init.py:init():616] starting backend
+2024-02-15 19:14:11,485 INFO    MainThread:109281 [wandb_init.py:init():620] setting up manager
+2024-02-15 19:14:11,488 INFO    MainThread:109281 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-02-15 19:14:11,488 INFO    MainThread:109281 [wandb_init.py:init():628] backend started and connected
+2024-02-15 19:14:11,495 INFO    MainThread:109281 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-02-15 19:14:11,496 INFO    MainThread:109281 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-02-15 19:14:11,496 INFO    MainThread:109281 [wandb_init.py:init():720] updated telemetry
+2024-02-15 19:14:11,496 INFO    MainThread:109281 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-15 19:14:12,480 WARNING MsgRouterThr:109281 [router.py:message_loop():77] message_loop has been closed
+2024-02-15 19:15:41,555 ERROR   MainThread:109281 [wandb_init.py:init():779] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-02-15 19:15:41,753 ERROR   MainThread:109281 [wandb_init.py:init():1194] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-

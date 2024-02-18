@@ -1,0 +1,56 @@
+wandb_version: 1
+
+epochs:
+  desc: null
+  value: 10
+classes:
+  desc: null
+  value: 2
+batch_size:
+  desc: null
+  value: 16
+lr:
+  desc: null
+  value: 0.001
+architecture:
+  desc: null
+  value: EfficientNet_B0
+num_workers:
+  desc: null
+  value: 16
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.13
+    cli_version: 0.16.3
+    framework: torch
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    start_time: 1708005996.275303
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      - 80
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      - 80
+      3:
+      - 1
+      - 2
+      - 13
+      - 16
+      - 23
+      4: 3.10.13
+      5: 0.16.3
+      8:
+      - 1
+      - 5
+      13: linux-x86_64

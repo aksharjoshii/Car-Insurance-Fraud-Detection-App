@@ -1,0 +1,32 @@
+Training Results:  {'Loss': 0.3029746605489071, 'Accuracy': 0.8765279282067151, 'Precision': 0.8817137534927041, 'Recall': 0.8719680687749463, 'F1-Score': 0.8765272631092678, 'Confusion Matrix': array([[2825,  381],
+       [ 417, 2840]])}
+validation_results:  {'Loss': 0.01787017344838322, 'Accuracy': 0.9615384615384616, 'Precision': 0.0, 'Recall': 0.0, 'F1-Score': 0.49019607843137253, 'Confusion Matrix': array([[200,   8],
+       [  0,   0]])}
+Training Results:  {'Loss': 0.1769181855073623, 'Accuracy': 0.9320748878229924, 'Precision': 0.9328838492185105, 'Recall': 0.9325980392156863, 'F1-Score': 0.9320682264371543, 'Confusion Matrix': array([[2980,  219],
+       [ 220, 3044]])}
+validation_results:  {'Loss': 0.002126269853941285, 'Accuracy': 0.9375, 'Precision': 0.0, 'Recall': 0.0, 'F1-Score': 0.4838709677419355, 'Confusion Matrix': array([[15,  1],
+       [ 0,  0]])}
+Training Results:  {'Loss': 0.18934595482400848, 'Accuracy': 0.9261952653566455, 'Precision': 0.9298082869511441, 'Recall': 0.9232422474669941, 'F1-Score': 0.9261938800684757, 'Confusion Matrix': array([[2979,  227],
+       [ 250, 3007]])}
+validation_results:  {'Loss': 0.00026309844290856087, 'Accuracy': 1.0, 'Precision': 0.0, 'Recall': 0.0, 'F1-Score': 1.0, 'Confusion Matrix': array([[16]])}
+Training Results:  {'Loss': 0.20279967785918956, 'Accuracy': 0.9237196348444995, 'Precision': 0.9253176324759839, 'Recall': 0.9221741815935763, 'F1-Score': 0.9237196275397641, 'Confusion Matrix': array([[2984,  241],
+       [ 252, 2986]])}
+validation_results:  {'Loss': 4.433578405861217e-06, 'Accuracy': 1.0, 'Precision': 0.0, 'Recall': 0.0, 'F1-Score': 1.0, 'Confusion Matrix': array([[16]])}
+Training Results:  {'Loss': 0.20940002568508728, 'Accuracy': 0.9209345505183352, 'Precision': 0.9261744966442953, 'Recall': 0.9118942731277533, 'F1-Score': 0.9208884590303467, 'Confusion Matrix': array([[3054,  231],
+       [ 280, 2898]])}
+validation_results:  {'Loss': 8.544235462599461e-05, 'Accuracy': 1.0, 'Precision': 0.0, 'Recall': 0.0, 'F1-Score': 1.0, 'Confusion Matrix': array([[16]])}
+Training Results:  {'Loss': 0.21494574736951305, 'Accuracy': 0.9153643818660065, 'Precision': 0.9167989838043823, 'Recall': 0.9101513240857503, 'F1-Score': 0.9153235055971581, 'Confusion Matrix': array([[3029,  262],
+       [ 285, 2887]])}
+validation_results:  {'Loss': 0.0001855326244736662, 'Accuracy': 1.0, 'Precision': 0.0, 'Recall': 0.0, 'F1-Score': 1.0, 'Confusion Matrix': array([[16]])}
+Training Results:  {'Loss': 0.21037529742271446, 'Accuracy': 0.9184589200061891, 'Precision': 0.9168490153172867, 'Recall': 0.9182842830306825, 'F1-Score': 0.9184493534599121, 'Confusion Matrix': array([[3003,  266],
+       [ 261, 2933]])}
+validation_results:  {'Loss': 0.000613051586517013, 'Accuracy': 1.0, 'Precision': 0.0, 'Recall': 0.0, 'F1-Score': 1.0, 'Confusion Matrix': array([[16]])}
+Training Results:  {'Loss': 0.19689086088587962, 'Accuracy': 0.9235649079374904, 'Precision': 0.9275947793660658, 'Recall': 0.9195933456561922, 'F1-Score': 0.9235649061076023, 'Confusion Matrix': array([[2984,  233],
+       [ 261, 2985]])}
+validation_results:  {'Loss': 0.00019816045492592426, 'Accuracy': 1.0, 'Precision': 0.0, 'Recall': 0.0, 'F1-Score': 1.0, 'Confusion Matrix': array([[16]])}
+Training Results:  {'Loss': 0.21556027054251864, 'Accuracy': 0.9187683738202074, 'Precision': 0.9202209266646211, 'Recall': 0.9188112745098039, 'F1-Score': 0.9187613722287209, 'Confusion Matrix': array([[2939,  260],
+       [ 265, 2999]])}
+validation_results:  {'Loss': 0.0006071253135652825, 'Accuracy': 1.0, 'Precision': 0.0, 'Recall': 0.0, 'F1-Score': 1.0, 'Confusion Matrix': array([[16]])}
+Training Results:  {'Loss': 0.2130172504988121, 'Accuracy': 0.9153643818660065, 'Precision': 0.9240587109125717, 'Recall': 0.903588143525741, 'F1-Score': 0.9153332153594183, 'Confusion Matrix': array([[3020,  238],
+       [ 309, 2896]])}
+validation_results:  {'Loss': 0.0006580934813707181, 'Accuracy': 1.0, 'Precision': 0.0, 'Recall': 0.0, 'F1-Score': 1.0, 'Confusion Matrix': array([[16]])}
