@@ -1,0 +1,76 @@
+
+
+  7%|██████████▎                                                                                                                                                | 1/15 [00:46<10:53, 46.65s/it]
+************************************************************
+EPOCH : 1
+Training Results:  {'Loss': 0.287952689739811, 'Accuracy': 0.8802413739749343, 'Precision': 0.8849584743155952, 'Recall': 0.8779371376258773, 'F1-Macro': 0.8802292593733336, 'Confusion Matrix': array([[2812,  374],
+       [ 400, 2877]])}
+validation_results:  {'Loss': 0.13859036593873164, 'Accuracy': 0.9375, 'Precision': 0.4782608695652174, 'Recall': 0.946236559139785, 'F1-Macro': 0.8005998521749222, 'Confusion Matrix': array([[1427,   96],
+       [   5,   88]])}
+
+ 13%|████████████████████▋                                                                                                                                      | 2/15 [01:32<09:58, 46.04s/it]
+************************************************************
+EPOCH : 2
+Training Results:  {'Loss': 0.18226492376698383, 'Accuracy': 0.9308370725669194, 'Precision': 0.9290582403965304, 'Recall': 0.9322350015542431, 'F1-Macro': 0.9308365360870452, 'Confusion Matrix': array([[3017,  229],
+       [ 218, 2999]])}
+validation_results:  {'Loss': 0.17899007152876642, 'Accuracy': 0.9282178217821783, 'Precision': 0.441025641025641, 'Recall': 0.9247311827956989, 'F1-Macro': 0.7789100241545894, 'Confusion Matrix': array([[1414,  109],
+       [   7,   86]])}
+
+ 20%|███████████████████████████████                                                                                                                            | 3/15 [02:18<09:14, 46.18s/it]
+************************************************************
+EPOCH : 3
+Training Results:  {'Loss': 0.1394461495444492, 'Accuracy': 0.9506421166640879, 'Precision': 0.9480639213275968, 'Recall': 0.9536321483771252, 'F1-Macro': 0.9506413178569447, 'Confusion Matrix': array([[3059,  169],
+       [ 150, 3085]])}
+validation_results:  {'Loss': 0.05528118463445197, 'Accuracy': 0.9839108910891089, 'Precision': 0.8764044943820225, 'Recall': 0.8387096774193549, 'F1-Macro': 0.9243091334894613, 'Confusion Matrix': array([[1512,   11],
+       [  15,   78]])}
+
+ 27%|█████████████████████████████████████████▎                                                                                                                 | 4/15 [03:04<08:26, 46.01s/it]
+************************************************************
+EPOCH : 4
+Training Results:  {'Loss': 0.1398468977658742, 'Accuracy': 0.9466192170818505, 'Precision': 0.9439733494851605, 'Recall': 0.9511748550503509, 'F1-Macro': 0.94660201533576, 'Confusion Matrix': array([[3001,  185],
+       [ 160, 3117]])}
+validation_results:  {'Loss': 0.055743242597834454, 'Accuracy': 0.9789603960396039, 'Precision': 0.743801652892562, 'Recall': 0.967741935483871, 'F1-Macro': 0.9149278782135846, 'Confusion Matrix': array([[1492,   31],
+       [   3,   90]])}
+ 27%|█████████████████████████████████████████▎                                                                                                                 | 4/15 [03:18<09:06, 49.66s/it]
+Traceback (most recent call last):
+  File "/home/akshar/Projects/Fraud_Classification/train.py", line 32, in <module>
+    model_pipeline(proj_config=wandb_proj, hyperparams=config, data_dir=data_dir, device=device)
+  File "/home/akshar/Projects/Fraud_Classification/pipelines/training_pipeline.py", line 30, in model_pipeline
+    train_res = training_model(model=model,
+  File "/home/akshar/Projects/Fraud_Classification/model_training/engine.py", line 22, in training_model
+    y_pred = model(images)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torchvision/models/efficientnet.py", line 343, in forward
+    return self._forward_impl(x)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torchvision/models/efficientnet.py", line 333, in _forward_impl
+    x = self.features(x)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torchvision/models/efficientnet.py", line 164, in forward
+    result = self.block(input)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1507, in _wrapped_call_impl
+    def _wrapped_call_impl(self, *args, **kwargs):
+KeyboardInterrupt

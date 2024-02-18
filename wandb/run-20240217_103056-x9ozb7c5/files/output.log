@@ -1,0 +1,8 @@
+
+  0%|                                                                                                                                                                   | 0/10 [00:44<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/akshar/Projects/Fraud_Classification/train.py", line 26, in <module>
+    model_pipeline(hyperparams=config, data_dir=data_dir, device=device)
+  File "/home/akshar/Projects/Fraud_Classification/pipelines/training_pipeline.py", line 55, in model_pipeline
+    with open(best_metrics_path, 'w') as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: '../artifacts/best_metrics.json'

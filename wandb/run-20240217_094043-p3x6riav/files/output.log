@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/akshar/Projects/Fraud_Classification/train.py", line 27, in <module>
+    model_pipeline(hyperparams=config, data_dir=data_dir, device=device)
+  File "/home/akshar/Projects/Fraud_Classification/pipelines/training_pipeline.py", line 18, in model_pipeline
+    train_loader, valid_loader = get_dataloaders(config=config, root_dir=data_dir)
+  File "/home/akshar/Projects/Fraud_Classification/data_loading/data_loaders.py", line 13, in get_dataloaders
+    train_dataset = CustomDataset(data_dir=root_dir, mode='train', transform={'minority': minority_transform, 'majority': majority_transform})
+  File "/home/akshar/Projects/Fraud_Classification/data_loading/custom_data.py", line 21, in __init__
+    self.img_paths, self.labels = self._get_data_from_folders(mode)
+  File "/home/akshar/Projects/Fraud_Classification/data_loading/custom_data.py", line 42, in _get_data_from_folders
+    for label_dir in os.listdir(data_path):
+FileNotFoundError: [Errno 2] No such file or directory: '../data_dir/car_images/train'

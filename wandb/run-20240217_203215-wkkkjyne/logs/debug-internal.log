@@ -1,0 +1,646 @@
+2024-02-17 20:32:15,701 INFO    StreamThr :542905 [internal.py:wandb_internal():86] W&B internal server running at pid: 542905, started at: 2024-02-17 20:32:15.701313
+2024-02-17 20:32:15,702 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status
+2024-02-17 20:32:15,703 INFO    WriterThread:542905 [datastore.py:open_for_write():87] open: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/run-wkkkjyne.wandb
+2024-02-17 20:32:15,704 DEBUG   SenderThread:542905 [sender.py:send():382] send: header
+2024-02-17 20:32:15,706 DEBUG   SenderThread:542905 [sender.py:send():382] send: run
+2024-02-17 20:32:16,473 INFO    SenderThread:542905 [dir_watcher.py:__init__():211] watching files in: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files
+2024-02-17 20:32:16,473 INFO    SenderThread:542905 [sender.py:_start_run_threads():1136] run started: wkkkjyne with start time 1708182135.701123
+2024-02-17 20:32:16,478 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: check_version
+2024-02-17 20:32:16,479 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: check_version
+2024-02-17 20:32:21,480 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:32:21,480 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-17 20:32:21,525 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: run_start
+2024-02-17 20:32:21,533 DEBUG   HandlerThread:542905 [system_info.py:__init__():27] System info init
+2024-02-17 20:32:21,533 DEBUG   HandlerThread:542905 [system_info.py:__init__():42] System info init done
+2024-02-17 20:32:21,533 INFO    HandlerThread:542905 [system_monitor.py:start():194] Starting system monitor
+2024-02-17 20:32:21,533 INFO    SystemMonitor:542905 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-17 20:32:21,533 INFO    HandlerThread:542905 [system_monitor.py:probe():214] Collecting system info
+2024-02-17 20:32:21,533 INFO    SystemMonitor:542905 [interfaces.py:start():190] Started cpu monitoring
+2024-02-17 20:32:21,534 INFO    SystemMonitor:542905 [interfaces.py:start():190] Started disk monitoring
+2024-02-17 20:32:21,535 INFO    SystemMonitor:542905 [interfaces.py:start():190] Started gpu monitoring
+2024-02-17 20:32:21,535 INFO    SystemMonitor:542905 [interfaces.py:start():190] Started memory monitoring
+2024-02-17 20:32:21,536 INFO    SystemMonitor:542905 [interfaces.py:start():190] Started network monitoring
+2024-02-17 20:32:21,546 DEBUG   HandlerThread:542905 [system_info.py:probe():151] Probing system
+2024-02-17 20:32:21,548 DEBUG   HandlerThread:542905 [system_info.py:_probe_git():136] Probing git
+2024-02-17 20:32:21,552 DEBUG   HandlerThread:542905 [system_info.py:_probe_git():144] Probing git done
+2024-02-17 20:32:21,552 DEBUG   HandlerThread:542905 [system_info.py:probe():199] Probing system done
+2024-02-17 20:32:21,552 DEBUG   HandlerThread:542905 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-18-generic-x86_64-with-glibc2.35', 'python': '3.10.13', 'heartbeatAt': '2024-02-17T15:02:21.546579', 'startedAt': '2024-02-17T15:02:15.697608', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/akshar/Projects/Fraud_Classification/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/aksharjoshii/Car-Insurance-Fraud-Detection-App.git', 'commit': '88349497de2ede5ebd8b897e0a4992e9f6f5ee31'}, 'email': 'joshiflink@gmail.com', 'root': '/home/akshar/Projects/Fraud_Classification', 'host': 'ideapad', 'username': 'akshar', 'executable': '/home/akshar/miniconda3/envs/pytorch/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2.8228124999999995, 'min': 400.0, 'max': 4463.0}, 'cpu_freq_per_core': [{'current': 3.983, 'min': 400.0, 'max': 4463.0}, {'current': 0.4, 'min': 400.0, 'max': 4463.0}, {'current': 3.61, 'min': 400.0, 'max': 4463.0}, {'current': 0.4, 'min': 400.0, 'max': 4463.0}, {'current': 3.127, 'min': 400.0, 'max': 4463.0}, {'current': 2.533, 'min': 400.0, 'max': 4463.0}, {'current': 4.399, 'min': 400.0, 'max': 4463.0}, {'current': 4.394, 'min': 400.0, 'max': 4463.0}, {'current': 3.512, 'min': 400.0, 'max': 4463.0}, {'current': 3.496, 'min': 400.0, 'max': 4463.0}, {'current': 3.512, 'min': 400.0, 'max': 4463.0}, {'current': 0.4, 'min': 400.0, 'max': 4463.0}, {'current': 3.978, 'min': 400.0, 'max': 4463.0}, {'current': 0.4, 'min': 400.0, 'max': 4463.0}, {'current': 4.02, 'min': 400.0, 'max': 4463.0}, {'current': 3.508, 'min': 400.0, 'max': 4463.0}], 'disk': {'/': {'total': 112.08584594726562, 'used': 17.246906280517578}}, 'gpu': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 27.250850677490234}}
+2024-02-17 20:32:21,552 INFO    HandlerThread:542905 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-17 20:32:21,552 INFO    HandlerThread:542905 [system_monitor.py:probe():227] Publishing system info
+2024-02-17 20:32:21,552 DEBUG   HandlerThread:542905 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-02-17 20:32:22,475 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/conda-environment.yaml
+2024-02-17 20:32:24,475 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/conda-environment.yaml
+2024-02-17 20:32:24,494 DEBUG   HandlerThread:542905 [system_info.py:_save_conda():220] Saving conda packages done
+2024-02-17 20:32:24,494 INFO    HandlerThread:542905 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-17 20:32:24,495 DEBUG   SenderThread:542905 [sender.py:send():382] send: files
+2024-02-17 20:32:24,495 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-02-17 20:32:24,498 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: python_packages
+2024-02-17 20:32:24,498 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: python_packages
+2024-02-17 20:32:24,499 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:32:24,499 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:32:24,500 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:32:25,013 DEBUG   SenderThread:542905 [sender.py:send():382] send: telemetry
+2024-02-17 20:32:25,476 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:32:25,476 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-metadata.json
+2024-02-17 20:32:25,476 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/requirements.txt
+2024-02-17 20:32:27,015 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:32:27,476 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:32:30,615 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/m581o4yb-wandb-metadata.json
+2024-02-17 20:32:32,015 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:32:37,016 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:32:39,499 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:32:39,500 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:32:39,500 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:32:42,850 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:32:47,855 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:32:48,483 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml
+2024-02-17 20:32:53,156 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:32:54,499 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:32:54,499 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:32:54,541 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:32:58,881 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:33:03,883 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:33:08,885 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:33:09,499 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:33:09,500 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:33:09,541 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:33:09,652 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:33:09,859 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:33:09,860 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:33:09,861 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:33:09,925 DEBUG   SenderThread:542905 [sender.py:send():382] send: config
+2024-02-17 20:33:10,494 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:33:13,925 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:33:15,679 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: log_artifact
+2024-02-17 20:33:15,679 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: log_artifact
+2024-02-17 20:33:16,395 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:33:16,496 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_1_5754835e55b9aa00f0ec.table.json
+2024-02-17 20:33:16,497 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media
+2024-02-17 20:33:16,497 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table
+2024-02-17 20:33:16,497 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid
+2024-02-17 20:33:17,031 INFO    SenderThread:542905 [sender.py:send_request_log_artifact():1470] logged artifact run-wkkkjyne-validroc_curve_table - {'id': 'QXJ0aWZhY3Q6NzI0NDc4MzQx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MDUxMzUyNQ==', 'latestArtifact': None}}
+2024-02-17 20:33:17,031 DEBUG   SenderThread:542905 [sender.py:send():382] send: files
+2024-02-17 20:33:17,032 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file media/table/valid/roc_curve_table_1_5754835e55b9aa00f0ec.table.json with policy now
+2024-02-17 20:33:17,032 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:33:17,032 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:33:17,033 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:33:17,128 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/i8j62lv7-media/table/valid/roc_curve_table_1_5754835e55b9aa00f0ec.table.json
+2024-02-17 20:33:17,498 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:33:17,889 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/ne443ghr-media/table/valid/roc_curve_table_1_5754835e55b9aa00f0ec.table.json
+2024-02-17 20:33:19,039 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:33:19,498 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml
+2024-02-17 20:33:19,498 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:33:21,536 DEBUG   SystemMonitor:542905 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-17 20:33:21,537 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:33:24,501 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:33:24,501 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:33:24,502 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:33:24,851 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:33:25,309 INFO    wandb-upload_1:542905 [upload_job.py:push():89] Uploaded file /home/akshar/.local/share/wandb/artifacts/staging/tmpwqz0cpjy
+2024-02-17 20:33:29,852 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:33:34,853 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:33:39,499 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:33:39,500 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:33:39,541 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:33:40,111 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:33:45,112 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:33:50,113 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:33:51,538 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:33:54,499 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:33:54,500 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:33:54,540 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:33:56,094 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:34:00,853 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:34:00,853 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:34:00,853 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:34:00,854 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:34:00,901 DEBUG   SenderThread:542905 [sender.py:send():382] send: config
+2024-02-17 20:34:01,527 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:34:01,901 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:34:06,323 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: log_artifact
+2024-02-17 20:34:06,324 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: log_artifact
+2024-02-17 20:34:06,333 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:34:06,531 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_3_35cb2b5df940a6738f83.table.json
+2024-02-17 20:34:06,531 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid
+2024-02-17 20:34:07,217 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/9o9lttyu-media/table/valid/roc_curve_table_3_35cb2b5df940a6738f83.table.json
+2024-02-17 20:34:07,274 INFO    SenderThread:542905 [sender.py:send_request_log_artifact():1470] logged artifact run-wkkkjyne-validroc_curve_table - {'id': 'QXJ0aWZhY3Q6NzI0NDc4OTEy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MDUxMzUyNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzI0NDc4MzQx', 'versionIndex': 0}}}
+2024-02-17 20:34:07,275 DEBUG   SenderThread:542905 [sender.py:send():382] send: files
+2024-02-17 20:34:07,275 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:34:07,275 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file media/table/valid/roc_curve_table_3_35cb2b5df940a6738f83.table.json with policy now
+2024-02-17 20:34:07,276 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:34:07,276 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:34:07,277 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:34:07,532 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:34:07,983 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/2tb5ukd1-media/table/valid/roc_curve_table_3_35cb2b5df940a6738f83.table.json
+2024-02-17 20:34:08,541 INFO    wandb-upload_1:542905 [upload_job.py:push():89] Uploaded file /home/akshar/.local/share/wandb/artifacts/staging/tmp1yzo94if
+2024-02-17 20:34:09,500 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:34:09,501 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:34:09,501 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:34:09,534 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:34:12,888 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:34:17,888 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:34:21,539 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:34:23,545 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:34:24,500 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:34:24,500 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:34:24,540 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:34:24,547 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml
+2024-02-17 20:34:29,845 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:34:34,848 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:34:39,500 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:34:39,501 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:34:39,541 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:34:39,889 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:34:44,889 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:34:49,891 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:34:51,063 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:34:51,063 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:34:51,063 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:34:51,064 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:34:51,104 DEBUG   SenderThread:542905 [sender.py:send():382] send: config
+2024-02-17 20:34:51,539 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:34:51,562 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:34:54,500 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:34:54,501 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:34:54,501 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:34:55,842 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:34:56,555 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: log_artifact
+2024-02-17 20:34:56,556 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: log_artifact
+2024-02-17 20:34:56,564 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml
+2024-02-17 20:34:56,596 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:34:57,310 INFO    SenderThread:542905 [sender.py:send_request_log_artifact():1470] logged artifact run-wkkkjyne-validroc_curve_table - {'id': 'QXJ0aWZhY3Q6NzI0NDc5MzA5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MDUxMzUyNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzI0NDc4OTEy', 'versionIndex': 1}}}
+2024-02-17 20:34:57,310 DEBUG   SenderThread:542905 [sender.py:send():382] send: files
+2024-02-17 20:34:57,311 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file media/table/valid/roc_curve_table_5_264f33e751b923ebd259.table.json with policy now
+2024-02-17 20:34:57,314 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:34:57,314 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:34:57,316 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:34:57,566 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:34:57,566 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_5_264f33e751b923ebd259.table.json
+2024-02-17 20:34:57,566 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid
+2024-02-17 20:34:57,952 INFO    wandb-upload_1:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/encszoiy-media/table/valid/roc_curve_table_5_264f33e751b923ebd259.table.json
+2024-02-17 20:34:58,713 INFO    wandb-upload_1:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/p90mo2zc-media/table/valid/roc_curve_table_5_264f33e751b923ebd259.table.json
+2024-02-17 20:34:58,849 INFO    wandb-upload_0:542905 [upload_job.py:push():89] Uploaded file /home/akshar/.local/share/wandb/artifacts/staging/tmpllakt3ca
+2024-02-17 20:34:59,569 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:35:01,317 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:35:06,318 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:35:09,502 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:35:09,503 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:35:09,503 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:35:11,928 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:35:16,928 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:35:21,540 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:35:22,540 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:35:24,501 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:35:24,501 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:35:24,544 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:35:28,111 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:35:33,112 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:35:38,113 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:35:39,504 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:35:39,505 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:35:39,507 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:35:41,268 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:35:41,269 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:35:41,269 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:35:41,270 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:35:41,313 DEBUG   SenderThread:542905 [sender.py:send():382] send: config
+2024-02-17 20:35:41,595 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:35:41,742 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: log_artifact
+2024-02-17 20:35:41,742 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: log_artifact
+2024-02-17 20:35:41,752 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:35:42,492 INFO    SenderThread:542905 [sender.py:send_request_log_artifact():1470] logged artifact run-wkkkjyne-validroc_curve_table - {'id': 'QXJ0aWZhY3Q6NzI0NDc5Njc2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MDUxMzUyNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzI0NDc5MzA5', 'versionIndex': 2}}}
+2024-02-17 20:35:42,493 DEBUG   SenderThread:542905 [sender.py:send():382] send: files
+2024-02-17 20:35:42,493 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file media/table/valid/roc_curve_table_7_c613ac5cc0fab79c219c.table.json with policy now
+2024-02-17 20:35:42,493 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:35:42,494 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:35:42,498 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:35:42,596 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:35:42,597 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_7_c613ac5cc0fab79c219c.table.json
+2024-02-17 20:35:42,598 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid
+2024-02-17 20:35:43,157 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/qrj76tp4-media/table/valid/roc_curve_table_7_c613ac5cc0fab79c219c.table.json
+2024-02-17 20:35:43,500 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:35:43,597 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:35:43,871 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/wmd3o1hf-media/table/valid/roc_curve_table_7_c613ac5cc0fab79c219c.table.json
+2024-02-17 20:35:44,088 INFO    wandb-upload_1:542905 [upload_job.py:push():89] Uploaded file /home/akshar/.local/share/wandb/artifacts/staging/tmpqqis8nae
+2024-02-17 20:35:48,501 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:35:51,540 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:35:53,541 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:35:54,502 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:35:54,503 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:35:54,503 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:35:58,811 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:35:59,607 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml
+2024-02-17 20:36:04,144 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:36:09,145 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:36:09,501 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:36:09,502 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:36:09,545 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:36:14,827 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:36:19,828 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:36:21,542 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:36:24,505 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:36:24,507 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:36:24,546 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:36:24,876 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:36:26,568 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:36:26,568 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:36:26,568 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:36:26,569 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:36:26,609 DEBUG   SenderThread:542905 [sender.py:send():382] send: config
+2024-02-17 20:36:26,626 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:36:27,023 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: log_artifact
+2024-02-17 20:36:27,023 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: log_artifact
+2024-02-17 20:36:27,034 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:36:27,627 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_9_536c0ae2f343d73024a7.table.json
+2024-02-17 20:36:27,628 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid
+2024-02-17 20:36:27,701 INFO    SenderThread:542905 [sender.py:send_request_log_artifact():1470] logged artifact run-wkkkjyne-validroc_curve_table - {'id': 'QXJ0aWZhY3Q6NzI0NDgwMDM5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MDUxMzUyNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzI0NDc5Njc2', 'versionIndex': 3}}}
+2024-02-17 20:36:27,701 DEBUG   SenderThread:542905 [sender.py:send():382] send: files
+2024-02-17 20:36:27,701 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file media/table/valid/roc_curve_table_9_536c0ae2f343d73024a7.table.json with policy now
+2024-02-17 20:36:27,702 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:36:27,702 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:36:27,703 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:36:28,262 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/5rmczbws-media/table/valid/roc_curve_table_9_536c0ae2f343d73024a7.table.json
+2024-02-17 20:36:28,628 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:36:29,034 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/7fwi1kti-media/table/valid/roc_curve_table_9_536c0ae2f343d73024a7.table.json
+2024-02-17 20:36:29,629 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:36:30,709 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:36:31,630 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml
+2024-02-17 20:36:35,063 INFO    wandb-upload_1:542905 [upload_job.py:push():89] Uploaded file /home/akshar/.local/share/wandb/artifacts/staging/tmpbu41drt_
+2024-02-17 20:36:36,017 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:36:39,504 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:36:39,504 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:36:39,506 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:36:41,823 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:36:46,824 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:36:51,542 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:36:52,543 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:36:54,503 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:36:54,504 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:36:54,545 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:36:58,182 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:37:03,183 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:37:08,184 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:37:09,507 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:37:09,508 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:37:09,550 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:37:11,982 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:37:11,982 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:37:11,983 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:37:11,984 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:37:12,025 DEBUG   SenderThread:542905 [sender.py:send():382] send: config
+2024-02-17 20:37:12,478 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: log_artifact
+2024-02-17 20:37:12,478 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: log_artifact
+2024-02-17 20:37:12,488 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:37:12,660 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:37:12,661 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_11_5051ac4e8546b0b8e311.table.json
+2024-02-17 20:37:12,661 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid
+2024-02-17 20:37:13,153 INFO    SenderThread:542905 [sender.py:send_request_log_artifact():1470] logged artifact run-wkkkjyne-validroc_curve_table - {'id': 'QXJ0aWZhY3Q6NzI0NDgwNDQx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MDUxMzUyNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzI0NDgwMDM5', 'versionIndex': 4}}}
+2024-02-17 20:37:13,154 DEBUG   SenderThread:542905 [sender.py:send():382] send: files
+2024-02-17 20:37:13,154 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file media/table/valid/roc_curve_table_11_5051ac4e8546b0b8e311.table.json with policy now
+2024-02-17 20:37:13,156 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:37:13,158 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:37:13,159 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:37:13,305 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/ym46d7l7-media/table/valid/roc_curve_table_11_5051ac4e8546b0b8e311.table.json
+2024-02-17 20:37:13,661 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:37:14,021 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/3punoxbt-media/table/valid/roc_curve_table_11_5051ac4e8546b0b8e311.table.json
+2024-02-17 20:37:14,160 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:37:15,663 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:37:16,767 INFO    wandb-upload_1:542905 [upload_job.py:push():89] Uploaded file /home/akshar/.local/share/wandb/artifacts/staging/tmpxadg1dte
+2024-02-17 20:37:19,161 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:37:21,543 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:37:24,504 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:37:24,505 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:37:24,507 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:37:24,825 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:37:29,826 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:37:34,830 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:37:35,676 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml
+2024-02-17 20:37:39,504 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:37:39,504 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:37:39,544 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:37:40,310 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:37:45,311 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:37:50,312 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:37:51,544 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:37:54,506 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:37:54,507 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:37:54,553 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:37:55,905 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:37:57,440 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:37:57,441 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:37:57,441 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:37:57,441 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:37:57,485 DEBUG   SenderThread:542905 [sender.py:send():382] send: config
+2024-02-17 20:37:57,691 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:37:57,899 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: log_artifact
+2024-02-17 20:37:57,899 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: log_artifact
+2024-02-17 20:37:57,909 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:37:58,632 INFO    SenderThread:542905 [sender.py:send_request_log_artifact():1470] logged artifact run-wkkkjyne-validroc_curve_table - {'id': 'QXJ0aWZhY3Q6NzI0NDgwODA5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MDUxMzUyNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzI0NDgwNDQx', 'versionIndex': 5}}}
+2024-02-17 20:37:58,632 DEBUG   SenderThread:542905 [sender.py:send():382] send: files
+2024-02-17 20:37:58,632 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file media/table/valid/roc_curve_table_13_0a3c846ee1e426da712d.table.json with policy now
+2024-02-17 20:37:58,636 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:37:58,636 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:37:58,637 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:37:58,692 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:37:58,692 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_13_0a3c846ee1e426da712d.table.json
+2024-02-17 20:37:58,692 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid
+2024-02-17 20:37:59,275 INFO    wandb-upload_1:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/08en7ktv-media/table/valid/roc_curve_table_13_0a3c846ee1e426da712d.table.json
+2024-02-17 20:37:59,693 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:37:59,907 INFO    wandb-upload_0:542905 [upload_job.py:push():89] Uploaded file /home/akshar/.local/share/wandb/artifacts/staging/tmpdr7dioyk
+2024-02-17 20:37:59,986 INFO    wandb-upload_1:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/jhs062lk-media/table/valid/roc_curve_table_13_0a3c846ee1e426da712d.table.json
+2024-02-17 20:38:01,639 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:38:06,644 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:38:09,504 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:38:09,505 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:38:09,506 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:38:09,704 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml
+2024-02-17 20:38:13,869 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:38:18,869 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:38:21,545 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:38:24,504 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:38:24,505 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:38:24,548 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:38:24,826 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:38:29,827 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:38:34,828 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:38:39,508 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:38:39,509 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:38:39,510 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:38:39,851 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:38:42,792 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:38:42,793 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:38:42,793 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:38:42,793 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:38:42,800 DEBUG   SenderThread:542905 [sender.py:send():382] send: config
+2024-02-17 20:38:43,305 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: log_artifact
+2024-02-17 20:38:43,305 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: log_artifact
+2024-02-17 20:38:43,314 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:38:43,727 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:38:43,727 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_15_f072cbd653798b91673d.table.json
+2024-02-17 20:38:43,728 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid
+2024-02-17 20:38:44,022 INFO    SenderThread:542905 [sender.py:send_request_log_artifact():1470] logged artifact run-wkkkjyne-validroc_curve_table - {'id': 'QXJ0aWZhY3Q6NzI0NDgxMjAw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MDUxMzUyNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzI0NDgwODA5', 'versionIndex': 6}}}
+2024-02-17 20:38:44,023 DEBUG   SenderThread:542905 [sender.py:send():382] send: files
+2024-02-17 20:38:44,023 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file media/table/valid/roc_curve_table_15_f072cbd653798b91673d.table.json with policy now
+2024-02-17 20:38:44,024 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:38:44,025 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:38:44,026 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:38:44,414 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/89ts17mg-media/table/valid/roc_curve_table_15_f072cbd653798b91673d.table.json
+2024-02-17 20:38:44,728 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:38:45,027 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:38:45,336 INFO    wandb-upload_1:542905 [upload_job.py:push():89] Uploaded file /home/akshar/.local/share/wandb/artifacts/staging/tmpu9i8d77h
+2024-02-17 20:38:45,413 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/z6hclhry-media/table/valid/roc_curve_table_15_f072cbd653798b91673d.table.json
+2024-02-17 20:38:45,734 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:38:50,033 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:38:51,545 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:38:54,506 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:38:54,506 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:38:54,509 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:38:55,871 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:39:00,872 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:39:05,873 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:39:09,506 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:39:09,507 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:39:09,552 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:39:11,114 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:39:11,756 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml
+2024-02-17 20:39:16,433 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:39:21,434 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:39:21,546 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:39:24,508 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:39:24,509 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:39:24,549 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:39:26,837 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:39:28,151 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:39:28,152 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:39:28,152 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:39:28,153 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:39:28,193 DEBUG   SenderThread:542905 [sender.py:send():382] send: config
+2024-02-17 20:39:28,679 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: log_artifact
+2024-02-17 20:39:28,680 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: log_artifact
+2024-02-17 20:39:28,689 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:39:28,768 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:39:28,768 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_17_c6e180208d24619537e3.table.json
+2024-02-17 20:39:28,768 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid
+2024-02-17 20:39:29,461 INFO    wandb-upload_1:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/lclre48s-media/table/valid/roc_curve_table_17_c6e180208d24619537e3.table.json
+2024-02-17 20:39:30,320 INFO    SenderThread:542905 [sender.py:send_request_log_artifact():1470] logged artifact run-wkkkjyne-validroc_curve_table - {'id': 'QXJ0aWZhY3Q6NzI0NDgxNjEz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MDUxMzUyNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzI0NDgxMjAw', 'versionIndex': 7}}}
+2024-02-17 20:39:30,321 DEBUG   SenderThread:542905 [sender.py:send():382] send: files
+2024-02-17 20:39:30,321 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file media/table/valid/roc_curve_table_17_c6e180208d24619537e3.table.json with policy now
+2024-02-17 20:39:30,322 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:39:30,322 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:39:30,323 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:39:30,771 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:39:31,063 INFO    wandb-upload_1:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/21zu9bp1-media/table/valid/roc_curve_table_17_c6e180208d24619537e3.table.json
+2024-02-17 20:39:31,602 INFO    wandb-upload_0:542905 [upload_job.py:push():89] Uploaded file /home/akshar/.local/share/wandb/artifacts/staging/tmp5azc3ml6
+2024-02-17 20:39:31,773 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:39:32,325 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:39:37,325 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:39:39,507 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:39:39,508 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:39:39,509 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:39:43,138 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:39:43,779 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml
+2024-02-17 20:39:48,438 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:39:51,547 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:39:53,548 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:39:54,507 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:39:54,507 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:39:54,549 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:39:58,838 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:40:03,839 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:40:08,840 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:40:09,507 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-17 20:40:09,508 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: stop_status
+2024-02-17 20:40:09,549 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:40:13,753 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:40:13,754 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:40:13,754 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:40:13,754 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:40:13,801 DEBUG   SenderThread:542905 [sender.py:send():382] send: config
+2024-02-17 20:40:13,801 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:40:14,203 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: log_artifact
+2024-02-17 20:40:14,203 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: log_artifact
+2024-02-17 20:40:14,213 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-17 20:40:14,742 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: log_artifact
+2024-02-17 20:40:14,802 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_created():271] file/dir created: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_19_0d3beb326a5ba095abba.table.json
+2024-02-17 20:40:14,802 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid
+2024-02-17 20:40:15,034 INFO    SenderThread:542905 [sender.py:send_request_log_artifact():1470] logged artifact run-wkkkjyne-validroc_curve_table - {'id': 'QXJ0aWZhY3Q6NzI0NDgxOTky', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MDUxMzUyNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzI0NDgxNjEz', 'versionIndex': 8}}}
+2024-02-17 20:40:15,037 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:40:15,332 DEBUG   SenderThread:542905 [sender.py:send():382] send: files
+2024-02-17 20:40:15,332 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file media/table/valid/roc_curve_table_19_0d3beb326a5ba095abba.table.json with policy now
+2024-02-17 20:40:15,332 DEBUG   SenderThread:542905 [sender.py:send():382] send: history
+2024-02-17 20:40:15,333 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: summary_record
+2024-02-17 20:40:15,333 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:40:15,333 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: log_artifact
+2024-02-17 20:40:15,444 INFO    wandb-upload_1:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/i5c3rl9o-media/table/valid/roc_curve_table_19_0d3beb326a5ba095abba.table.json
+2024-02-17 20:40:15,742 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-17 20:40:15,803 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml
+2024-02-17 20:40:15,803 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:40:16,154 INFO    wandb-upload_1:542905 [upload_job.py:push():131] Uploaded file /tmp/tmpfzlvx25owandb/vsjdpjpo-media/table/valid/roc_curve_table_19_0d3beb326a5ba095abba.table.json
+2024-02-17 20:40:16,252 INFO    SenderThread:542905 [sender.py:send_request_log_artifact():1470] logged artifact trained_model - {'id': 'QXJ0aWZhY3Q6NzI0NDgyMDA3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MDUxMTc3Mg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzI0NDc0Mzg4', 'versionIndex': 0}}}
+2024-02-17 20:40:16,252 DEBUG   SenderThread:542905 [sender.py:send():382] send: telemetry
+2024-02-17 20:40:16,252 DEBUG   SenderThread:542905 [sender.py:send():382] send: exit
+2024-02-17 20:40:16,252 INFO    SenderThread:542905 [sender.py:send_exit():589] handling exit code: 0
+2024-02-17 20:40:16,252 INFO    SenderThread:542905 [sender.py:send_exit():591] handling runtime: 473
+2024-02-17 20:40:16,253 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:40:16,253 INFO    SenderThread:542905 [sender.py:send_exit():597] send defer
+2024-02-17 20:40:16,253 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: poll_exit
+2024-02-17 20:40:16,254 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:16,254 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 0
+2024-02-17 20:40:16,254 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:16,254 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-02-17 20:40:16,254 INFO    SenderThread:542905 [sender.py:transition_state():617] send defer: 1
+2024-02-17 20:40:16,254 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:16,254 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 1
+2024-02-17 20:40:16,255 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:16,255 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-02-17 20:40:16,255 INFO    SenderThread:542905 [sender.py:transition_state():617] send defer: 2
+2024-02-17 20:40:16,255 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:16,255 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 2
+2024-02-17 20:40:16,255 INFO    HandlerThread:542905 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-17 20:40:16,255 DEBUG   SystemMonitor:542905 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-17 20:40:16,255 DEBUG   SystemMonitor:542905 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-17 20:40:16,256 INFO    HandlerThread:542905 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-17 20:40:16,256 INFO    HandlerThread:542905 [interfaces.py:finish():202] Joined disk monitor
+2024-02-17 20:40:16,318 INFO    HandlerThread:542905 [interfaces.py:finish():202] Joined gpu monitor
+2024-02-17 20:40:16,318 INFO    HandlerThread:542905 [interfaces.py:finish():202] Joined memory monitor
+2024-02-17 20:40:16,318 INFO    HandlerThread:542905 [interfaces.py:finish():202] Joined network monitor
+2024-02-17 20:40:16,318 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:16,318 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-02-17 20:40:16,318 INFO    SenderThread:542905 [sender.py:transition_state():617] send defer: 3
+2024-02-17 20:40:16,318 DEBUG   SenderThread:542905 [sender.py:send():382] send: stats
+2024-02-17 20:40:16,319 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:16,319 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 3
+2024-02-17 20:40:16,319 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:16,319 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-02-17 20:40:16,319 INFO    SenderThread:542905 [sender.py:transition_state():617] send defer: 4
+2024-02-17 20:40:16,319 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:16,319 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 4
+2024-02-17 20:40:16,319 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:16,319 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-02-17 20:40:16,319 INFO    SenderThread:542905 [sender.py:transition_state():617] send defer: 5
+2024-02-17 20:40:16,319 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:16,319 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 5
+2024-02-17 20:40:16,320 DEBUG   SenderThread:542905 [sender.py:send():382] send: summary
+2024-02-17 20:40:16,320 INFO    SenderThread:542905 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-17 20:40:16,320 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:16,320 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-02-17 20:40:16,320 INFO    SenderThread:542905 [sender.py:transition_state():617] send defer: 6
+2024-02-17 20:40:16,320 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:16,320 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 6
+2024-02-17 20:40:16,321 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:16,321 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-02-17 20:40:16,322 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:40:16,654 INFO    wandb-upload_0:542905 [upload_job.py:push():89] Uploaded file /home/akshar/.local/share/wandb/artifacts/staging/tmpp53gdj0q
+2024-02-17 20:40:16,719 INFO    SenderThread:542905 [sender.py:transition_state():617] send defer: 7
+2024-02-17 20:40:16,720 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:16,720 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 7
+2024-02-17 20:40:16,720 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:16,720 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-02-17 20:40:16,742 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-17 20:40:16,803 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml
+2024-02-17 20:40:16,803 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:40:17,804 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:40:19,467 INFO    SenderThread:542905 [sender.py:transition_state():617] send defer: 8
+2024-02-17 20:40:19,467 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: poll_exit
+2024-02-17 20:40:19,468 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:19,468 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 8
+2024-02-17 20:40:19,468 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:19,468 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-02-17 20:40:19,468 INFO    SenderThread:542905 [job_builder.py:build():296] Attempting to build job artifact
+2024-02-17 20:40:19,469 INFO    SenderThread:542905 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-02-17 20:40:19,470 INFO    SenderThread:542905 [job_builder.py:build():402] adding wandb-job metadata file
+2024-02-17 20:40:19,483 INFO    SenderThread:542905 [sender.py:transition_state():617] send defer: 9
+2024-02-17 20:40:19,483 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:19,483 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 9
+2024-02-17 20:40:19,484 DEBUG   SenderThread:542905 [sender.py:send():382] send: artifact
+2024-02-17 20:40:19,743 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-17 20:40:19,807 INFO    Thread-13 :542905 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:40:23,202 INFO    SenderThread:542905 [sender.py:send_artifact():1494] sent artifact job-https___github.com_aksharjoshii_Car-Insurance-Fraud-Detection-App.git_train.py - {'id': 'QXJ0aWZhY3Q6NzI0NDc0NDI1', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MDUxMTc5NA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzI0NDc0NDI1', 'versionIndex': 0}}}
+2024-02-17 20:40:23,202 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:23,202 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-02-17 20:40:23,202 INFO    SenderThread:542905 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-17 20:40:23,202 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:40:23,809 INFO    SenderThread:542905 [dir_watcher.py:finish():388] scan: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files
+2024-02-17 20:40:23,809 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json wandb-summary.json
+2024-02-17 20:40:23,809 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/conda-environment.yaml conda-environment.yaml
+2024-02-17 20:40:23,811 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-metadata.json wandb-metadata.json
+2024-02-17 20:40:23,811 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log output.log
+2024-02-17 20:40:23,811 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/requirements.txt requirements.txt
+2024-02-17 20:40:23,811 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml config.yaml
+2024-02-17 20:40:23,818 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_15_f072cbd653798b91673d.table.json media/table/valid/roc_curve_table_15_f072cbd653798b91673d.table.json
+2024-02-17 20:40:23,819 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_7_c613ac5cc0fab79c219c.table.json media/table/valid/roc_curve_table_7_c613ac5cc0fab79c219c.table.json
+2024-02-17 20:40:23,819 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_5_264f33e751b923ebd259.table.json media/table/valid/roc_curve_table_5_264f33e751b923ebd259.table.json
+2024-02-17 20:40:23,819 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_13_0a3c846ee1e426da712d.table.json media/table/valid/roc_curve_table_13_0a3c846ee1e426da712d.table.json
+2024-02-17 20:40:23,819 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_9_536c0ae2f343d73024a7.table.json media/table/valid/roc_curve_table_9_536c0ae2f343d73024a7.table.json
+2024-02-17 20:40:23,819 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_1_5754835e55b9aa00f0ec.table.json media/table/valid/roc_curve_table_1_5754835e55b9aa00f0ec.table.json
+2024-02-17 20:40:23,819 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_17_c6e180208d24619537e3.table.json media/table/valid/roc_curve_table_17_c6e180208d24619537e3.table.json
+2024-02-17 20:40:23,819 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_3_35cb2b5df940a6738f83.table.json media/table/valid/roc_curve_table_3_35cb2b5df940a6738f83.table.json
+2024-02-17 20:40:23,819 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_19_0d3beb326a5ba095abba.table.json media/table/valid/roc_curve_table_19_0d3beb326a5ba095abba.table.json
+2024-02-17 20:40:23,819 INFO    SenderThread:542905 [dir_watcher.py:finish():402] scan save: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/media/table/valid/roc_curve_table_11_5051ac4e8546b0b8e311.table.json media/table/valid/roc_curve_table_11_5051ac4e8546b0b8e311.table.json
+2024-02-17 20:40:23,820 INFO    SenderThread:542905 [sender.py:transition_state():617] send defer: 10
+2024-02-17 20:40:23,820 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: poll_exit
+2024-02-17 20:40:23,820 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:23,820 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 10
+2024-02-17 20:40:23,821 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:23,821 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-02-17 20:40:23,821 INFO    SenderThread:542905 [file_pusher.py:finish():172] shutting down file pusher
+2024-02-17 20:40:24,463 INFO    wandb-upload_0:542905 [upload_job.py:push():131] Uploaded file /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/wandb-summary.json
+2024-02-17 20:40:24,745 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-17 20:40:24,745 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-17 20:40:24,746 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: poll_exit
+2024-02-17 20:40:24,933 INFO    wandb-upload_2:542905 [upload_job.py:push():131] Uploaded file /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/conda-environment.yaml
+2024-02-17 20:40:24,983 INFO    wandb-upload_5:542905 [upload_job.py:push():131] Uploaded file /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/config.yaml
+2024-02-17 20:40:25,243 INFO    wandb-upload_3:542905 [upload_job.py:push():131] Uploaded file /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/output.log
+2024-02-17 20:40:25,351 INFO    wandb-upload_4:542905 [upload_job.py:push():131] Uploaded file /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/files/requirements.txt
+2024-02-17 20:40:25,746 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-17 20:40:25,746 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: poll_exit
+2024-02-17 20:40:26,746 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-17 20:40:26,747 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: poll_exit
+2024-02-17 20:40:27,748 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-17 20:40:27,748 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: poll_exit
+2024-02-17 20:40:28,382 INFO    wandb-upload_1:542905 [upload_job.py:push():89] Uploaded file /home/akshar/.local/share/wandb/artifacts/staging/tmph90riygk
+2024-02-17 20:40:28,748 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-17 20:40:28,749 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: poll_exit
+2024-02-17 20:40:28,749 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: status_report
+2024-02-17 20:40:29,749 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-17 20:40:29,749 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: poll_exit
+2024-02-17 20:40:29,815 INFO    Thread-12 (_thread_body):542905 [sender.py:transition_state():617] send defer: 11
+2024-02-17 20:40:29,815 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:29,815 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 11
+2024-02-17 20:40:29,816 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:29,816 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-02-17 20:40:29,816 INFO    SenderThread:542905 [file_pusher.py:join():178] waiting for file pusher
+2024-02-17 20:40:29,819 INFO    SenderThread:542905 [sender.py:transition_state():617] send defer: 12
+2024-02-17 20:40:29,820 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:29,820 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 12
+2024-02-17 20:40:29,820 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:29,820 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-02-17 20:40:29,820 INFO    SenderThread:542905 [file_stream.py:finish():595] file stream finish called
+2024-02-17 20:40:30,159 INFO    SenderThread:542905 [file_stream.py:finish():599] file stream finish is done
+2024-02-17 20:40:30,160 INFO    SenderThread:542905 [sender.py:transition_state():617] send defer: 13
+2024-02-17 20:40:30,160 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:30,160 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 13
+2024-02-17 20:40:30,160 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:30,160 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-02-17 20:40:30,160 INFO    SenderThread:542905 [sender.py:transition_state():617] send defer: 14
+2024-02-17 20:40:30,160 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: defer
+2024-02-17 20:40:30,161 INFO    HandlerThread:542905 [handler.py:handle_request_defer():172] handle defer: 14
+2024-02-17 20:40:30,161 DEBUG   SenderThread:542905 [sender.py:send():382] send: final
+2024-02-17 20:40:30,161 DEBUG   SenderThread:542905 [sender.py:send():382] send: footer
+2024-02-17 20:40:30,161 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: defer
+2024-02-17 20:40:30,161 INFO    SenderThread:542905 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-02-17 20:40:30,162 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-17 20:40:30,162 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: poll_exit
+2024-02-17 20:40:30,163 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-17 20:40:30,163 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: server_info
+2024-02-17 20:40:30,164 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: server_info
+2024-02-17 20:40:30,205 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: get_summary
+2024-02-17 20:40:30,205 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: sampled_history
+2024-02-17 20:40:30,206 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: job_info
+2024-02-17 20:40:30,448 DEBUG   SenderThread:542905 [sender.py:send_request():409] send_request: job_info
+2024-02-17 20:40:30,449 DEBUG   HandlerThread:542905 [handler.py:handle_request():146] handle_request: shutdown
+2024-02-17 20:40:30,449 INFO    HandlerThread:542905 [handler.py:finish():869] shutting down handler
+2024-02-17 20:40:31,206 INFO    WriterThread:542905 [datastore.py:close():296] close: /home/akshar/Projects/Fraud_Classification/wandb/run-20240217_203215-wkkkjyne/run-wkkkjyne.wandb
+2024-02-17 20:40:31,448 INFO    SenderThread:542905 [sender.py:finish():1572] shutting down sender
+2024-02-17 20:40:31,449 INFO    SenderThread:542905 [file_pusher.py:finish():172] shutting down file pusher
+2024-02-17 20:40:31,449 INFO    SenderThread:542905 [file_pusher.py:join():178] waiting for file pusher

@@ -1,0 +1,122 @@
+{
+    "os": "Linux-6.5.0-18-generic-x86_64-with-glibc2.35",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-02-17T12:04:17.520703",
+    "startedAt": "2024-02-17T12:04:16.217226",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/akshar/Projects/Fraud_Classification/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "host": "ideapad",
+    "username": "akshar",
+    "executable": "/home/akshar/miniconda3/envs/pytorch/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2.2660625000000003,
+        "min": 400.0,
+        "max": 4463.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.535,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 0.4,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.701,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 3.524,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.608,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 0.4,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 0.4,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 4.278,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 2.576,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 3.998,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 4.229,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 0.4,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 4.416,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 0.4,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 4.185,
+            "min": 400.0,
+            "max": 4463.0
+        },
+        {
+            "current": 3.529,
+            "min": 400.0,
+            "max": 4463.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 112.08584594726562,
+            "used": 17.259952545166016
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 27.250850677490234
+    }
+}

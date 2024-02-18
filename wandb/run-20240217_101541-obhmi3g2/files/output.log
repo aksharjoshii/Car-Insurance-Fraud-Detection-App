@@ -1,0 +1,19 @@
+  0%|                                                                                                                                                                   | 0/10 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/akshar/Projects/Fraud_Classification/train.py", line 26, in <module>
+    model_pipeline(hyperparams=config, data_dir=data_dir, device=device)
+  File "/home/akshar/Projects/Fraud_Classification/pipelines/training_pipeline.py", line 30, in model_pipeline
+    train_res = training_model(model=model,
+  File "/home/akshar/Projects/Fraud_Classification/model_training/engine.py", line 22, in training_model
+    y_pred = model(images)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1574, in _call_impl
+    hook_result = hook(self, args, result)
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/wandb_torch.py", line 110, in <lambda>
+    lambda mod, inp, outp: parameter_log_hook(
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/wandb_torch.py", line 97, in parameter_log_hook
+    if not log_track_update(log_track):
+  File "/home/akshar/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/wandb_torch.py", line 62, in log_track_update
+    if log_track[LOG_TRACK_COUNT] < log_track[LOG_TRACK_THRESHOLD]:
+TypeError: '<' not supported between instances of 'int' and 'str'

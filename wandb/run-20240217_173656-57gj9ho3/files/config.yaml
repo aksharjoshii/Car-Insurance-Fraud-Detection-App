@@ -1,0 +1,90 @@
+wandb_version: 1
+
+epochs:
+  desc: null
+  value: 15
+classes:
+  desc: null
+  value: 2
+batch_size:
+  desc: null
+  value: 16
+lr:
+  desc: null
+  value: 0.001
+architecture:
+  desc: null
+  value: EfficientNet_B0
+sampling:
+  desc: null
+  value: true
+dropout:
+  desc: null
+  value: 0.3
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.13
+    cli_version: 0.16.3
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1708171616.165038
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      - 80
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      - 80
+      3:
+      - 2
+      - 13
+      - 16
+      - 23
+      4: 3.10.13
+      5: 0.16.3
+      8:
+      - 5
+      13: linux-x86_64
+    visualize:
+      valid/roc_curve:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: valid/roc_curve_table
+                fields: []
